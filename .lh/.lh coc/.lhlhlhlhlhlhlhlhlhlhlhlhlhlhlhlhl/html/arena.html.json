@@ -1,0 +1,18 @@
+{
+    "sourceFile": "html/arena.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1744729579299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1744729579299,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n    <head>\r\n        <meta charset=\"UTF-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n        <link rel=\"stylesheet\" href=\"../css/arena.css\">\r\n        <link rel=\"stylesheet\" href=\"../css/main.css\">\r\n        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css\">\r\n\r\n        <title> Arena </title>\r\n    </head>\r\n    <body>\r\n        <header>\r\n            <img src=\"../assets/full-logo.svg\" alt=\"Minecraft wiki\">\r\n\r\n            <div id=\"searchbar\">\r\n                <span class=\"mdi mdi-magnify\"></span>\r\n                <input type=\"text\" id=\"searchbarInput\" placeholder=\"Search\">\r\n            </div>\r\n\r\n            <button>\r\n                <span class=\"mdi mdi-menu\"></span>\r\n            </button>\r\n        </header>\r\n        <h1> Arena rules </h1>\r\n        <p>Arena is Minecraft area where multiples entities fight against one unique BOSS.\r\n            This area represent a chuck of 32 blocks by 32 blocks in Minecraft world.\r\n            Every 10 minutes a new BOSS spawn at the center of the Arena and start fighting against entities present\r\n            inside the area.\r\n\r\n            The BOSS can only focus one entity by one and can not fight multiples entities together.\r\n            To win the Arena, you need to defeat the BOSS by placing new entities within this area.\r\n            The Arena is open during 10 minutes. During this time, you can create, modify, or delete any entity you\r\n            want.\r\n            After 10 minutes, the Arena close, a new BOSS spawn and start fighting against all entities inside the area.\r\n\r\n            You can not create, modify or delete any entities while the Arena is closed.\r\n\r\n            The Arena stop fight and re-open when all entities died inside area or BOSS is defeated.</p>\r\n        <script src=\"../js/arena.js\"></script>\r\n    </body>\r\n</html>"
+        }
+    ]
+}
