@@ -1,5 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
 	border: 0;
 	padding: 0;
 	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.weight-300 {
+	font-weight: 300;
+}
+
+.weight-400 {
+	font-weight: 400;
+}
+
+.weight-500 {
+	font-weight: 500;
+}
+
+.weight-600 {
+	font-weight: 600;
+}
+
+.weight-700 {
+	font-weight: 700;
+}
+
+header nav {
+	/* hide nav buttons on mobile */
+	display: none;
+}
+
+header nav a{
+	color: #fff;
+	
+}
+
+header {
+	background-image: url(../assets/background-tile.png);
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+header img{
+	padding: 15px;
+}
+
+.header-searchbar {
+	background-color: #fff;
+	height: fit-content;
+	border-radius: 6px;
+	padding: 4px;
+	width: 40%;
+}
+
+.header-searchbar button {
+	background-color: transparent;
+	border: none;
+}
+
+header input {
+	width: 80%;
+	border: none;
+}
+
+header input:focus {
+	outline: none;
+}
+
+#burger-menu{
+	background-color: transparent;
+padding: 10px;
+}
+
+.mdi-menu {
+	font-size: 15px;
+	color: #fff;
+}
+
+@media screen and (min-width: 850px) {
+	header nav {
+		display: block;
+	}
+	
 }

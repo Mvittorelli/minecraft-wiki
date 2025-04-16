@@ -11,33 +11,43 @@
         <title> Arena </title>
     </head>
     <body>
-        <header> 
+        <header>
             <img src="../assets/full-logo.svg" alt="Minecraft wiki">
 
-            <div id="searchbar">
-                <span class="mdi mdi-magnify"></span>
-                <input type="text" id="searchbarInput" placeholder="Search">
+            <div id="header-searchbar">
+                <button id="header-search-btn">
+                    <span class="mdi mdi-magnify"></span>
+                </button>
+                <input type="text" id="header-searchbarInput" placeholder="Search">
             </div>
 
             <button>
                 <span class="mdi mdi-menu"></span>
             </button>
         </header>
-        <h1> Arena rules </h1>
-        <p>Arena is Minecraft area where multiples entities fight against one unique BOSS.
-            This area represent a chuck of 32 blocks by 32 blocks in Minecraft world.
-            Every 10 minutes a new BOSS spawn at the center of the Arena and start fighting against entities present
-            inside the area.
+        <main>
 
-            The BOSS can only focus one entity by one and can not fight multiples entities together.
-            To win the Arena, you need to defeat the BOSS by placing new entities within this area.
-            The Arena is open during 10 minutes. During this time, you can create, modify, or delete any entity you
-            want.
-            After 10 minutes, the Arena close, a new BOSS spawn and start fighting against all entities inside the area.
+            <h1> Arena rules </h1>
+            <p>Arena is Minecraft area where multiples entities fight against one unique BOSS.
+                This area represent a chuck of 32 blocks by 32 blocks in Minecraft world.
+                Every 10 minutes a new BOSS spawn at the center of the Arena and start fighting against entities present
+                inside the area.
 
-            You can not create, modify or delete any entities while the Arena is closed.
+                The BOSS can only focus one entity by one and can not fight multiples entities together.
+                To win the Arena, you need to defeat the BOSS by placing new entities within this area.
+                The Arena is open during 10 minutes. During this time, you can create, modify, or delete any entity you
+                want.
+                After 10 minutes, the Arena close, a new BOSS spawn and start fighting against all entities inside the
+                area.
 
-            The Arena stop fight and re-open when all entities died inside area or BOSS is defeated.</p>
+                You can not create, modify or delete any entities while the Arena is closed.
+
+                The Arena stop fight and re-open when all entities died inside area or BOSS is defeated.</p>
+        </main>
+
+        <footer>
+
+        </footer>
         <script src="../js/arena.js"></script>
     </body>
 </html>
