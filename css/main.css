@@ -12,6 +12,7 @@ button {
 
 body {
   font-family: "Rubik", sans-serif;
+  width: 100%;
 }
 
 .uppercase {
@@ -37,6 +38,8 @@ body {
 .weight-700 {
   font-weight: 700;
 }
+
+/*	HEADER	*/
 
 header nav {
   /* hide nav buttons on mobile */
@@ -118,6 +121,32 @@ header a {
     display: none;
   }
   .header-searchbar {
-	width: 20%;
+    width: 20%;
   }
+}
+
+/*	GRADIENT & DIRT BG	*/
+
+
+main{
+	position: relative;
+}
+
+.top-gradient img {
+  width: 100%;
+}
+
+.background-dirt {
+  background-image: url("../assets/background-dirt.svg");
+  width: 100%;
+  height: 500px;
+  background-repeat: repeat-x;
+  z-index: 1;
+  position: absolute;
+}
+
+.mainSection {
+	margin-top: 5%;
+  z-index: 2;
+  background-color: #fff;
 }
