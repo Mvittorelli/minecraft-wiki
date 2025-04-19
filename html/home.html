@@ -6,7 +6,10 @@
 
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
 
     <title>Home</title>
   </head>
@@ -17,11 +20,18 @@
       </a>
 
       <nav>
-        <a href="../html/home.html" class="uppercase weight-500" id="active-page"><span class="mdi mdi-compass"></span>
-          Explore</a>
-        <a href="../html/arena.html" class="uppercase weight-500"><span class="mdi mdi-sword-cross"></span> Arena</a>
-        <a href="../html/rules.html" class="uppercase weight-500"><span class="mdi mdi-book-open-variant"></span>
-          Rules</a>
+        <a
+          href="../html/home.html"
+          class="uppercase weight-500"
+          id="active-page"
+          ><span class="mdi mdi-compass"></span> Explore</a
+        >
+        <a href="../html/arena.html" class="uppercase weight-500"
+          ><span class="mdi mdi-sword-cross"></span> Arena</a
+        >
+        <a href="../html/rules.html" class="uppercase weight-500"
+          ><span class="mdi mdi-book-open-variant"></span> Rules</a
+        >
       </nav>
 
       <div class="header-searchbar">
@@ -37,11 +47,10 @@
     </header>
 
     <div class="top-gradient">
-      <img src="../assets/background-cloud.svg" alt="gradient">
+      <img src="../assets/background-cloud.svg" alt="gradient" />
     </div>
 
-    <div class="background-dirt">
-    </div>
+    <div class="background-dirt"></div>
 
     <main>
       <section class="mainSection">
@@ -51,7 +60,7 @@
           <img src="../assets/cadre.svg" alt="Cadre" />
           <p class="weight-300">
             <span class="weight-400 span">This page use many images.</span>
-            <br>
+            <br />
             It is not recommended for people with limited or slow internet
             connections to read through this page.
           </p>
@@ -89,30 +98,31 @@
             <input type="text" id="mobs-search" placeholder="Search..." />
           </div>
           <div class="moreInput">
-            <label class="weight-500">
+            <label class="weight-700">
               Classication
               <input type="text" placeholder="Choose" />
             </label>
-            <label class="weight-500">
+            <label class="weight-700">
               Type
               <input type="text" placeholder="Type" />
             </label>
-            <label class="weight-500">
+            <label class="weight-700">
               Health
               <input type="number" placeholder="27" />
             </label>
-            <label class="weight-500">
+            <label class="weight-700">
               Armor
               <input type="number" placeholder="27" />
             </label>
-            <label class="weight-500">
+            <label class="weight-700">
               Damage
               <input type="number" placeholder="27" />
             </label>
-          </div>   
-          <button id="mobs-search-btn-2">Search</button>
-          <hr />
+          </div>
+          <button id="mobs-search-btn-green" class= "uppercase weight-700">Search</button>
+        
         </section>
+        <hr />
         <section id="result"></section>
       </section>
     </main>

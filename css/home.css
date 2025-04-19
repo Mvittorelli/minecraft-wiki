@@ -34,7 +34,6 @@
 .mob-search-bar {
   background-color: #fff;
   height: fit-content;
-
   padding: 4px;
   width: 90%;
 }
@@ -42,4 +41,11 @@
 #mobs-search-btn {
   background-color: transparent;
   border: none;
+}
+
+#mobs-search-btn-green {
+  color: #fff;
+  background-color: #4f8c69;
+  padding: 20px 30px;
+  border-radius: 727px;
 }
