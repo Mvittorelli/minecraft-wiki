@@ -1,20 +1,13 @@
-// for (let i = 0; i < 100; i++) {
-
-    
-    fetch("http://192.168.1.15:3000/v1/arena/entities", {
-        headers: {
-        "Content-type": "application/json"
-
-    },
-    method: "POST",
-    body: JSON.stringify({
-        "entityId": i,
-        "x": 15,
-        "z": 0
-    })
+fetch("http://51.38.232.174:3000/v1/arena/entities", {
+  headers: {
+    "Content-type": "application/json",
+  },
+  method: "POST",
+  body: JSON.stringify({
+    entityId: 10,
+    x: -3,
+    z: -8,
+  }),
 })
-    .then(e => e.json())
-    .then(json => console.log(json))
-    
-// }
-
+  .then((e) => e.json())
+  .then((json) => console.log(json));

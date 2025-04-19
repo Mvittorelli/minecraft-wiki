@@ -45,6 +45,16 @@ body {
   font-weight: 700;
 }
 
+/*	input	*/
+
+input {
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+}
+
 /*	HEADER	*/
 
 header nav {
@@ -85,10 +95,6 @@ header img {
 header input {
   width: 80%;
   border: none;
-}
-
-header input:focus {
-  outline: none;
 }
 
 #burger-menu {
@@ -162,7 +168,7 @@ main {
   width: 80%;
   padding: 27px;
   border-radius: 4px;
-  gap: 20px	;
+  gap: 20px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -171,14 +177,12 @@ main {
   }
 }
 
-
-
 /*	 OTHER	 */
 
 hr {
-	margin: 30px 0;
-	height: 1px;
-	background-color: #3A3A3A;
-	border-radius: 2px;
-	/* width: 90%; */
+  margin: 30px 0;
+  height: 1px;
+  background-color: #3a3a3a;
+  border-radius: 2px;
+  /* width: 90%; */
 }
