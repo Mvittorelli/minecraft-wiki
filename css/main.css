@@ -1,171 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-	border: 0;
-	padding: 0;
-	margin: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-h1{
+h1 {
   font-size: 48px;
 }
 
 body {
-	font-family: "Rubik", sans-serif;
-	width: 100%;
-	background-image: url(../assets/background-tile.png);
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  color: #3a3a3a;
+  background-image: url(../assets/background-tile.png);
 }
 
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .weight-300 {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 .weight-400 {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .weight-500 {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .weight-600 {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .weight-700 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /*	HEADER	*/
 
 header nav {
-	/* hide nav buttons on mobile */
-	display: none;
+  /* hide nav buttons on mobile */
+  display: none;
 }
 
 header nav a {
-	color: #fff;
+  color: #fff;
 }
 
 header {
-	background-image: url(../assets/background-tile.png);
-	color: #fff;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
+  background-image: url(../assets/background-tile.png);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 header img {
-	padding: 15px;
+  padding: 15px;
 }
 
 .header-searchbar {
-	background-color: #fff;
-	height: fit-content;
-	border-radius: 6px;
-	padding: 4px;
-	width: 40%;
+  background-color: #fff;
+  height: fit-content;
+  border-radius: 6px;
+  padding: 4px;
+  width: 40%;
 }
 
 .header-searchbar button {
-	background-color: transparent;
-	border: none;
+  background-color: transparent;
+  border: none;
 }
 
 header input {
-	width: 80%;
-	border: none;
+  width: 80%;
+  border: none;
 }
 
 header input:focus {
-	outline: none;
+  outline: none;
 }
 
 #burger-menu {
-	background-color: transparent;
-	padding: 10px;
+  background-color: transparent;
+  padding: 10px;
 }
 
 .mdi-menu {
-	font-size: 15px;
-	color: #fff;
+  font-size: 15px;
+  color: #fff;
 }
 
 header nav {
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	/* border: 1px red solid; */
-	width: 30%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+  width: 30%;
 }
 
 header a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #active-page {
-	text-decoration: underline;
-	text-decoration-thickness: 3px;
-	text-underline-offset: 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
 @media screen and (min-width: 850px) {
-	header nav {
-		display: flex;
-	}
-	#burger-menu {
-		display: none;
-	}
-	.header-searchbar {
-		width: 20%;
-	}
+  header nav {
+    display: flex;
+  }
+  #burger-menu {
+    display: none;
+  }
+  .header-searchbar {
+    width: 20%;
+  }
 }
 
 /*	GRADIENT & DIRT BG	*/
 
 main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .top-gradient img {
-	width: 100%;
+  width: 100%;
 }
 
 .background-dirt {
-	background-image: url("../assets/background-dirt.svg");
-	width: 100%;
-	height: 500px;
-	background-repeat: repeat-x;
-	position: absolute;
-	align-self: stretch;
-	margin-top: -5px;
+  background-image: url("../assets/background-dirt.svg");
+  width: 100%;
+  height: 500px;
+  background-repeat: repeat-x;
+  position: absolute;
+  align-self: stretch;
+  margin-top: -5px;
 }
 
 .mainSection {
-	top: 80px;
-	position: relative;
-	background-color: #e6eff4;
-	width: 80%;
-	padding: 17px;
-	border-radius: 4px;
+  top: 80px;
+  position: relative;
+  background-color: #e6eff4;
+  width: 80%;
+  padding: 27px;
+  border-radius: 4px;
+  gap: 20px	;
 }
 
 @media screen and (min-width: 1400px) {
-	.mainSection {
-		top: 120px;
-	}
+  .mainSection {
+    top: 120px;
+  }
 }
 
+
+
+/*	 OTHER	 */
+
+hr {
+	margin: 30px 0;
+	height: 1px;
+	background-color: #3A3A3A;
+	border-radius: 2px;
+	/* width: 90%; */
+}

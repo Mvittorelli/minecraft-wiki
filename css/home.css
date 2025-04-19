@@ -1,0 +1,14 @@
+.image-warning{
+    background-color: #F5C2CD;
+    border-left: #BC5C70 5px solid;
+    display: flex;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.entity-list p {
+    color: #000;
+}
