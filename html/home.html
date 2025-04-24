@@ -1,118 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
 
-        <link rel="stylesheet" href="../css/home.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <a href="../html/home.html">
+        <img src="../assets/full-logo.svg" alt="Minecraft wiki" />
+      </a>
 
-        <title> Home </title>
-    </head>
-    <body>
-        <header>
-            <img src="../assets/full-logo.svg" alt="Minecraft wiki">
+      <nav>
+        <a
+          href="../html/home.html"
+          class="uppercase weight-500"
+          id="active-page"
+          ><span class="mdi mdi-compass"></span> Explore</a
+        >
+        <a href="../html/arena.html" class="uppercase weight-500"
+          ><span class="mdi mdi-sword-cross"></span> Arena</a
+        >
+        <a href="../html/rules.html" class="uppercase weight-500"
+          ><span class="mdi mdi-book-open-variant"></span> Rules</a
+        >
+      </nav>
 
-            <nav>
-                <a href="" class="uppercase weight-500">Explore</a>
-                <a href="" class="uppercase weight-500">Arena</a>
-                <a href="" class="uppercase weight-500">Rules</a>
-            </nav>
+      <div class="header-searchbar">
+        <button id="header-search-btn">
+          <span class="mdi mdi-magnify"></span>
+        </button>
+        <input type="text" id="header-searchbarInput" placeholder="Search" />
+      </div>
 
-            <div class="header-searchbar">
-                <button id="header-search-btn">
-                    <span class="mdi mdi-magnify"></span>
-                </button>
-                <input type="text" id="header-searchbarInput" placeholder="Search">
-            </div>
+      <button id="burger-menu">
+        <span class="mdi mdi-menu"></span>
+      </button>
+    </header>
 
-            <button id="burger-menu">
-                <span class="mdi mdi-menu"></span>
+    <div class="top-gradient">
+      <img src="../assets/background-cloud.svg" alt="gradient" />
+    </div>
+
+    <div class="background-dirt"></div>
+
+    <main>
+      <section class="mainSection">
+        <h1 class="weight-300">Explore Minecraft Entities</h1>
+
+        <div class="image-warning">
+          <img src="../assets/cadre.svg" alt="Cadre" />
+          <p class="weight-300">
+            <span class="weight-400 span">This page use many images.</span>
+            <br />
+            It is not recommended for people with limited or slow internet
+            connections to read through this page.
+          </p>
+        </div>
+
+        <div class="entity-desc">
+          <p class="weight-300">
+            An <span class="weight-400">Entity</span> is an AI-driven game
+            entity resembling a living creature. Besides its common meaning, the
+            term "mob" is short for "mobile entity".[1] All entities can be
+            attacked and hurt (from falling, attacked by a player or another
+            entity, falling into the void, hit by an arrow, etc), and have some
+            form of voluntary movement. <br /><br />
+            Different types of entities often have unique AI and drop good or
+            bad loot depending on the entity that was killed.
+          </p>
+
+          <img src="../assets/mobs.svg" alt="Mobs" />
+        </div>
+        <div class="entity-list">
+          <h2 class="weight-400">List of Entities</h2>
+          <hr />
+          <p class="weight-400">
+            Entities are classifie by their nature from the player's
+            perspective. You can search for one or multiples entities by their
+            name using the search bar or simply by filling appropriate filters
+            (type, health, armor, damage, etc..)
+          </p>
+        </div>
+        <section class="search-section">
+          <div class="mob-search-bar">
+            <button id="mobs-search-btn">
+              <span class="mdi mdi-magnify"></span>
             </button>
-        </header>
+            <input type="text" id="mobs-search" placeholder="Search..." />
+          </div>
+          <div class="moreInput">
+            <label class="weight-700">
+              Classication
+              <input type="text" placeholder="Choose" />
+            </label>
+            <label class="weight-700">
+              Type
+              <input type="text" placeholder="Type" />
+            </label>
+            <label class="weight-700">
+              Health
+              <input type="number" placeholder="27" />
+            </label>
+            <label class="weight-700">
+              Armor
+              <input type="number" placeholder="27" />
+            </label>
+            <label class="weight-700">
+              Damage
+              <input type="number" placeholder="27" />
+            </label>
+          </div>
+          <button id="mobs-search-btn-green" class= "uppercase weight-700">Search</button>
+        
+        </section>
+        <hr />
+        <section id="result"></section>
+      </section>
+    </main>
 
-        <main>
-            <div class="top-gradient"></div>
-
-            <div class="background-dirt"></div>
-
-            <section class="mainSection">
-                <h1 class="weight-300">Explore Minecraft Entities</h1>
-
-                <div class="image-warning">
-                    <img src="../assets/cadre.svg" alt="Cadre">
-                    <p class="weight-300">
-                        <span class="weight-400 span">This page use many images.</span>
-                        It is not recommended for people with limited or slow internet connections to read through this
-                        page.
-                    </p>
-                </div>
-
-                <div class="entity-desc">
-                    <p class="weight-300">
-                        An <span class="weight-400">Entity</span> is an AI-driven game entity resembling a living
-                        creature.
-                        Besides its common meaning, the
-                        term "mob" is short for "mobile entity".[1] All entities can be attacked and hurt (from falling,
-                        attacked by a player or another entity, falling into the void, hit by an arrow, etc), and have
-                        some
-                        form of voluntary movement.
-                        <br><br>
-                        Different types of entities often have unique AI and drop good or bad loot depending on the
-                        entity
-                        that was killed.
-                    </p>
-
-                    <img src="../assets/mobs.svg" alt="Mobs">
-                </div>
-                <div class="entity-list">
-                    <h2 class="weight-400">List of Entities</h2>
-                    <hr>
-                    <p class="weight-400">
-                        Entities are classifie by their nature from the player's perspective. You can search for one or
-                        multiples entities by their name using the search bar or simply by filling appropriate filters
-                        (type, health, armor, damage, etc..)
-                    </p>
-                </div>
-                <section class="search-section">
-                    <div class="mob-search-bar">
-                        <button id="mobs-search-btn">
-                            <span class="mdi mdi-magnify"></span>
-                        </button>
-                        <input type="text" id="mobs-search" placeholder="Search...">
-                    </div>
-                    <div class="moreInput">
-                        <label class="weight-500">
-                            Classication
-                            <input type="text" placeholder="Choose">
-                        </label>
-                        <label class="weight-500">
-                            Type
-                            <input type="text" placeholder="Type">
-                        </label>
-                        <label class="weight-500">
-                            Health
-                            <input type="number" placeholder="27">
-                        </label>
-                        <label class="weight-500">
-                            Armor
-                            <input type="number" placeholder="27">
-                        </label>
-                        <label class="weight-500">
-                            Damage
-                            <input type="number" placeholder="27">
-                        </label>
-                    </div>
-                    <button id="mobs-search-btn-2">Search</button>
-                    <hr>
-                </section>
-                <section id="result"></section>
-
-            </section>
-        </main>
-
-        <script src="../js/home.js"></script>
-    </body>
+    <script src="../js/home.js"></script>
+  </body>
 </html>

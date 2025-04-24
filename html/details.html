@@ -15,16 +15,33 @@
   </head>
   <body>
     <header>
-      <img src="../assets/full-logo.svg" alt="Minecraft wiki" />
+      <a href="../html/home.html">
+        <img src="../assets/full-logo.svg" alt="Minecraft wiki" />
+      </a>
 
-      <div id="header-searchbar">
+      <nav>
+        <a
+          href="../html/home.html"
+          class="uppercase weight-500"
+          id="active-page"
+          ><span class="mdi mdi-compass"></span> Explore</a
+        >
+        <a href="../html/arena.html" class="uppercase weight-500"
+          ><span class="mdi mdi-sword-cross"></span> Arena</a
+        >
+        <a href="../html/rules.html" class="uppercase weight-500"
+          ><span class="mdi mdi-book-open-variant"></span> Rules</a
+        >
+      </nav>
+
+      <div class="header-searchbar">
         <button id="header-search-btn">
           <span class="mdi mdi-magnify"></span>
         </button>
         <input type="text" id="header-searchbarInput" placeholder="Search" />
       </div>
 
-      <button>
+      <button id="burger-menu">
         <span class="mdi mdi-menu"></span>
       </button>
     </header>
