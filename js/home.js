@@ -18,6 +18,7 @@ async function searchMob(value) {
 
 function createCard(elements) {
   const container = document.createElement("div");
+  container.className = elements.type;
 
   const box = Object.assign(document.createElement("div"), {
     innerHTML: elements.name,

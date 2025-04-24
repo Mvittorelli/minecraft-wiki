@@ -73,7 +73,6 @@
     font-size: 16px;
     text-align: center;
     text-transform: capitalize;
-    width: 100%;
   }
   
   .box.passive {
@@ -103,22 +102,24 @@
     flex-direction: column;
     gap: 8px;
     padding: 8px;
-    border: 2px solid #4f8c69;
     min-width: 320px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 15px;
   }
   
   #result img {
     max-width: 120px;
   }
-  
+    
   #result .info {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: row;
   }
+  
   
   #result .info p {
     width: max-content;
@@ -147,4 +148,19 @@
     cursor: pointer;
   }
 
+  #result > div.hostile {
+    border: 2px solid #D24646;
+  }
   
+  #result > div.neutral {
+    border: 2px solid #E3B599;
+  }
+  
+  #result > div.passive {
+    border: 2px solid #4F8C69;
+  }
+
+  
+#result > div > div {
+  width: 90%;
+}
