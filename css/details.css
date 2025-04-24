@@ -67,17 +67,6 @@ h2 {
   gap: 12px;
 }
 
-.card.passive {
-  border: 2px solid var(--clr-passive);
-}
-
-.card.neutral {
-  border: 2px solid var(--clr-neutral);
-}
-
-.card.hostile {
-  border: 2px solid var(--clr-hostile);
-}
 
 .card-title {
   display: flex;
@@ -94,17 +83,7 @@ h2 {
   margin-right: auto;
 }
 
-.card-title.passive {
-  background: var(--clr-passive);
-}
 
-.card-title.neutral {
-  background: var(--clr-neutral);
-}
-
-.card-title.hostile {
-  background: var(--clr-hostile);
-}
 
 .card-title p {
   color: var(--clr-white);
@@ -160,17 +139,6 @@ h2 {
   cursor: pointer;
 }
 
-.btn.passive {
-  background: var(--clr-passive);
-}
-
-.btn.neutral {
-  background: var(--clr-neutral);
-}
-
-.btn.hostile {
-  background: var(--clr-hostile);
-}
 
 .size {
   display: flex;
@@ -222,17 +190,6 @@ hr {
   border: none;
 }
 
-hr.passive {
-  background: var(--clr-passive);
-}
-
-hr.neutral {
-  background: var(--clr-neutral);
-}
-
-hr.hostile {
-  background: var(--clr-hostile);
-}
 
 h2,
 #title-name {
@@ -261,4 +218,80 @@ h2,
   .desc {
     flex-direction: row;
   }
+}
+
+.card {
+    border: 3px solid #4F8C69;
+}
+
+hr {
+    color: #4F8C69;
+}
+
+.card-title {
+  box-shadow: -4px -4px 2px 0px #00000040 inset;
+}
+
+/* --- THEMES PAR TYPE DE MOB --- */
+
+.card.passive,
+.btn.passive,
+hr.passive {
+  background-color: var(--clr-passive);
+  color: var(--clr-white);
+  border: none;
+}
+
+.card.neutral,
+.btn.neutral,
+hr.neutral {
+  background-color: var(--clr-neutral);
+  color: var(--clr-black);
+  border: none;
+}
+
+.card.hostile,
+.btn.hostile,
+hr.hostile {
+  background-color: var(--clr-hostile);
+  color: var(--clr-white);
+  border: none;
+}
+
+
+.card-title.passive {
+  color: var(--clr-passive);
+}
+.card-title.neutral {
+  color: var(--clr-neutral);
+}
+.card-title.hostile {
+  color: var(--clr-hostile);
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+
+.card .value,
+.card .label,
+.card .hw p {
+  color: inherit;
+}
+
+.card-title p {
+  font-weight: bold;
+  font-size: 1.2rem;
 }

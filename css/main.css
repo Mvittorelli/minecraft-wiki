@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-blue: #0246F1;
+  --clr-dark: #3A3A3A;
+  --clr-light-blue: #DBDBDB;
+  --clr-passive: #4F8C69;
+  --clr-green: #4F8C69;
+  --clr-neutral: #E3B599;
+  --clr-hostile: #D24646;
+  --clr-beige: #F5E2BC;
+  --clr-beige-dark: #C2AC7F;
+  --clr-overlay: #3A3A3AF2;
+
+}
 * {
   border: 0;
   padding: 0;
