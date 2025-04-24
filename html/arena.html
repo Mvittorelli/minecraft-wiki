@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/arena.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="../css/arena.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
 
     <title>Arena</title>
   </head>
@@ -17,11 +20,18 @@
       </a>
 
       <nav>
-        <a href="../html/home.html" class="uppercase weight-500"><span class="mdi mdi-compass"></span> Explore</a>
-        <a href="../html/arena.html" class="uppercase weight-500" id="active-page"><span
-            class="mdi mdi-sword-cross"></span> Arena</a>
-        <a href="../html/rules.html" class="uppercase weight-500"><span class="mdi mdi-book-open-variant"></span>
-          Rules</a>
+        <a href="../html/home.html" class="uppercase weight-500"
+          ><span class="mdi mdi-compass"></span> Explore</a
+        >
+        <a
+          href="../html/arena.html"
+          class="uppercase weight-500"
+          id="active-page"
+          ><span class="mdi mdi-sword-cross"></span>Arena</a
+        >
+        <a href="../html/rules.html" class="uppercase weight-500"
+          ><span class="mdi mdi-book-open-variant"></span> Rules</a
+        >
       </nav>
 
       <div class="header-searchbar">
@@ -37,30 +47,79 @@
     </header>
 
     <div class="top-gradient">
-      <img src="../assets/background-cloud.svg" alt="gradient">
+      <img src="../assets/background-cloud.svg" alt="gradient" />
     </div>
 
-    <div class="background-dirt">
-    </div>
+    <div class="background-dirt"></div>
     <main>
-        <div class="mainSection">
-            <h1>Arena</h1>
-        <div></div>
-        <p>Choose an entity to spawn inside the Arena.</p>
-        <div>
-            <div>
-                <p>Entity</p>
-                <select name="entity-select" id="entity-select">
+      <div class="mainSection">
+        <section class="arena-section">
+          <div class="arena-header">
+            <h2 class="arena-title">Arena</h2>
+            <div class="arena-status">
+              <span>OPEN</span>
+            </div>
+          </div>
+          <p class="arena-instructions">
+            Choose an entity to spawn inside the <span>Arena</span>.
+          </p>
+          <div>
+            <form id="form-spawn">
+              <div>
+                <label>
+                  <p>Entity</p>
+                  <select name="entityId" required>
                     <option value="">Chose</option>
                   </select>
-            </div>
-        </div>
-               
-        </main>
-        
-        <footer>
+                </label>
 
-        </footer>
-        <script src="../js/arena.js"></script>
-    </body>
+                <label>
+                  <p>X Coordinate</p>
+                  <input type="text" name="x" placeholder="255.2" required />
+                </label>
+
+                <label>
+                  <p>Z Coordinate</p>
+                  <input type="text" name="z" placeholder="126.7" required />
+                </label>
+              </div>
+              <div class="spawn-button-container">
+                <button>SPAWN</button>
+              </div>
+            </form>
+          </div>
+
+          <h3 class="entities-title">Arena entities</h3>
+
+          <hr class="section-divider" />
+
+          <p class="arena-instructions">
+            This list describes all entities registered inside the
+            <span>Arena</span>.
+          </p>
+
+          <table class="entity-table">
+            <thead>
+              <tr>
+                <th>Entity</th>
+                <th>Name</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>Strength</th>
+                <th>Del</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <h3 class="map-title">Arena map</h3>
+
+          <hr class="section-divider" />
+
+          <img src="assets/arena-map.png" alt="Arena Map" class="arena-map" />
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../js/arena.js"></script>
+  </body>
 </html>

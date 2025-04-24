@@ -202,3 +202,51 @@ hr {
   /* width: 90%; */
 }
 
+.arena-status.open {
+  background-color: var(--clr-green);
+}
+
+.arena-status.close {
+  background-color: var(--clr-hostile);
+}
+
+
+.arena-title {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--clr-dark);
+}
+
+.spawn-button-container button {
+  padding: 12px 50px;
+  border-radius: 9999px;
+  background-color: var(--clr-green);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.entities-title,
+.map-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  color: var(--clr-dark);
+  margin-top: 20px;
+}
+
+
+.arena-status {
+  padding: 2px 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--clr-passive);
+  align-items: center;
+  display: flex;
+  height: 20px;
+}
