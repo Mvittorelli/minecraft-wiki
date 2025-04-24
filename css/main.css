@@ -250,3 +250,38 @@ hr {
   display: flex;
   height: 20px;
 }
+
+.card.passive,
+.btn.passive,
+hr.passive {
+  background-color: var(--clr-passive);
+  color: var(--clr-white);
+  border: none;
+}
+
+.card.neutral,
+.btn.neutral,
+hr.neutral {
+  background-color: var(--clr-neutral);
+  color: var(--clr-black);
+  border: none;
+}
+
+.card.hostile,
+.btn.hostile,
+hr.hostile {
+  background-color: var(--clr-hostile);
+  color: var(--clr-white);
+  border: none;
+}
+
+
+.card-title.passive {
+  color: var(--clr-passive);
+}
+.card-title.neutral {
+  color: var(--clr-neutral);
+}
+.card-title.hostile {
+  color: var(--clr-hostile);
+}

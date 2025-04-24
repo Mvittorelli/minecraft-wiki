@@ -38,28 +38,113 @@
   margin-top: 15px;
 }
 
-#mobs-search-btn {
-  background-color: transparent;
-  border: none;
-}
-
-#mobs-search-btn-green {
-  color: #fff;
-  background-color: #4f8c69;
-  padding: 20px 30px;
-  border-radius: 727px;
-}
-
-#result {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-} 
 
 
+  @media screen and (min-width: 720px) {
+    #result {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  
+    .moreInput {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  
+    #result > div {
+      max-width: 320px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    #result > div {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      align-items: center;
+    }
+  }
 
-#result img {
-  width: 50%;
-}
+  .box {
+    padding: 16px;
+    box-shadow: -4px -4px 2px 0px #00000040 inset;
+    text-shadow: 2px 2px 2px #00000080;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  
+  .box.passive {
+    background-color: #4F8C69;
+  }
+  
+  .box.neutral {
+    background-color: #E3B599;
+  }
+  
+  .box.hostile {
+    background-color: #D24646;
+  }
+  
+  .box * {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  #result {
+    gap: 50px;
+  }
+  
+  #result > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 2px solid #4f8c69;
+    min-width: 320px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #result img {
+    max-width: 120px;
+  }
+  
+  #result .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #result .info p {
+    width: max-content;
+    color: black;
+  }
+
+  #mobs-search-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    color: #4f8c69;
+    cursor: pointer;
+  }
+  
+  #mobs-search-btn-green {
+    background-color: #4f8c69;
+    border: none;
+    font-size: 22px;
+    padding: 8px 32px;
+    border-radius: 9999px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  
