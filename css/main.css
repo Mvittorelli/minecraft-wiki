@@ -285,3 +285,51 @@ hr.hostile {
 .card-title.hostile {
   color: var(--clr-hostile);
 }
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.value {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img.mob-img {
+  width: 100%;
+
+} 
+
+.card-title.passive {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: #F5E2BC;
+  border-left: 5px solid #C2AC7F;
+  margin: 15px 0;
+}
+
+.info > div {
+  display: flex;
+ flex-direction: column;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
