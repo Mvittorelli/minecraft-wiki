@@ -49,3 +49,17 @@
   padding: 20px 30px;
   border-radius: 727px;
 }
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+} 
+
+
+
+#result img {
+  width: 50%;
+}
