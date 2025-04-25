@@ -149,6 +149,7 @@ header a {
   }
   .header-searchbar {
     width: 20%;
+    border-radius: 150px;
   }
 }
 

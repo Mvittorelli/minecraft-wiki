@@ -41,6 +41,7 @@ h2 {
   border-left: 5px solid var(--clr-beige-dark);
   padding: 10px 2px;
   gap: 12px;
+  padding: 10px;
 }
 
 .highlight {
