@@ -253,15 +253,15 @@ hr {
 }
 
 .card.passive  {
-  border : 2px solid var(--clr-passive);
+  border : 3px solid var(--clr-passive);
 }
 
 .card.neutral {
-  border : 2px solid var(--clr-neutral);
+  border : 3px solid var(--clr-neutral);
 }
 
 .card.hostile {
-  border : 2px solid var(--clr-hostile);
+  border : 3px solid var(--clr-hostile);
 }
 
 
@@ -286,4 +286,3 @@ background-color:   var(--clr-passive);
  }
 
 
- 

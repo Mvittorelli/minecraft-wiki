@@ -153,20 +153,20 @@
   }
 
   #result > div.hostile {
-    border: 2px solid #D24646;
+    border: 3px solid #D24646;
   }
   
   #result > div.neutral {
-    border: 2px solid #E3B599;
+    border: 3px solid #E3B599;
   }
   
   #result > div.passive {
-    border: 2px solid #4F8C69;
+    border: 3px solid #4F8C69;
   }
 
    
   #result > div.Passive {
-    border: 2px solid #4F8C69;
+    border: 3px solid #4F8C69;
   }
   
 #result > div > div {
