@@ -242,3 +242,9 @@ align-items: center;
   object-fit: contain;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 600px) {
+  .entity-image img {
+    width: 100%;
+  } 
+}
