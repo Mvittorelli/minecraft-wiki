@@ -180,3 +180,43 @@ section#result {
   justify-content: center;
 }
 
+.entity-desc {
+  display: flex;
+align-items: center;  
+}
+
+.entity-desc > p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  
+}
+.entity-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.entity-text {
+  flex: 1 1 300px;
+}
+
+.entity-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entity-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.entity-image {
+  flex: 0 0 200px;
+}

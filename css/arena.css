@@ -83,6 +83,7 @@ label input {
     border-collapse: collapse;
     background-color: white;
     border: 1px solid #ccc;
+    width: 100%;
 }
 
 .entity-table thead {
@@ -140,3 +141,4 @@ select {
     padding: 3px;
     border-radius: 4px;
 }
+
