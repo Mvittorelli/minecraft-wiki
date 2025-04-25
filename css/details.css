@@ -223,9 +223,7 @@ hr {
 .btn {
   padding: 0.5rem 1rem;
   font-weight: bold;
-  border-radius: 0.5rem;
   border: none;
-  transition: background-color 0.2s ease;
 }
 
 .btn:hover {
@@ -275,7 +273,7 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-}
+  margin-bottom: 3px;}
 
 img.mob-img {
   width: 200px;

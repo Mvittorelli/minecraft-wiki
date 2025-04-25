@@ -275,6 +275,24 @@ background-color:   var(--clr-passive);
   background-color: var(--clr-hostile);
 }
 
+.passive .btn {
+  background-color: var(--clr-passive);
+  color: white;
+  box-shadow: -4px -4px 2px 0px #00000040 inset;
+}
+
+.hostile .btn {
+  background-color: var(--clr-hostile);
+  color: white;
+  box-shadow: -4px -4px 2px 0px #00000040 inset;
+}
+
+.neutral .btn {
+  background-color: var(--clr-neutral);
+  color: white;
+  box-shadow: -4px -4px 2px 0px #00000040 inset;  
+} 
+
 .stat {
   display: flex;
   justify-content: space-between;
