@@ -195,7 +195,7 @@ main {
 /*	 OTHER	 */
 
 hr {
-  margin: 30px 0;
+  margin: 10px 0;
   height: 1px;
   background-color: #3a3a3a;
   border-radius: 2px;
@@ -277,13 +277,13 @@ hr.hostile {
 
 
 .card-title.passive {
-  color: var(--clr-passive);
+  background-color: var(--clr-passive);
 }
 .card-title.neutral {
-  color: var(--clr-neutral);
+  background-color: var(--clr-neutral);
 }
 .card-title.hostile {
-  color: var(--clr-hostile);
+  background-color: var(--clr-hostile);
 }
 
 .stat {
@@ -291,45 +291,7 @@ hr.hostile {
   justify-content: space-between;
   align-items: center;
 }
+ .value > span {  
+  font-size: 16px;
 
-.value {
-  width: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-img.mob-img {
-  width: 100%;
-
-} 
-
-.card-title.passive {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.desc {
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-.info {
-  background-color: #F5E2BC;
-  border-left: 5px solid #C2AC7F;
-  margin: 15px 0;
-}
-
-.info > div {
-  display: flex;
- flex-direction: column;
-}
-
-.card {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-}
+ }

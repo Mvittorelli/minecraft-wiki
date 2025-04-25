@@ -12,8 +12,7 @@
   background: var(--clr-white);
   padding: 26px 30px;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  flex-direction: column; 
 }
 
 .breadcrumb,
@@ -64,7 +63,6 @@ h2 {
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 
@@ -100,7 +98,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 
 .label {
@@ -123,21 +120,9 @@ h2 {
   color: var(--clr-blue);
   text-decoration: underline;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
 }
 
-.btn {
-  padding: 12px 0;
-  border: none;
-  color: var(--clr-white);
-  font-weight: 700;
-  font-size: 16px;
-  text-shadow: 4px 4px 6px var(--clr-shadow);
-  box-shadow: inset -4px -4px 2px var(--clr-shadow-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
 
 
 .size {
@@ -238,7 +223,6 @@ hr {
 
 .btn {
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
   font-weight: bold;
   border-radius: 0.5rem;
   border: none;
@@ -260,4 +244,40 @@ hr {
 .card-title p {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.info {
+  background-color: #F5E2BC;
+  border-left: 5px solid #C2AC7F;
+  margin: 15px 0;
+}
+
+.value {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 40%;
+
+}
+
+
+.btn {
+  padding: 12px 0;
+  border: none;
+  color: var(--clr-white);
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: 4px 4px 6px var(--clr-shadow);
+  box-shadow: inset -4px -4px 2px var(--clr-shadow-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+img.mob-img {
+  width: 200px;
 }
