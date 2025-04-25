@@ -1,8 +1,9 @@
-span.weight-400 {
-    color: #0246F1;
-    border-bottom: 3px #0246F1 solid;
+span a {
+  color: #0246f1;
+  text-underline-offset: 5px;
+  text-decoration: underline #0246f1;
 }
 
 hr.line-how-to {
-    margin: 10px 0;
+  margin: 10px 0;
 }

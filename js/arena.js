@@ -23,19 +23,27 @@ async function createTableElement({ x, z, id, entity }) {
   tdImg.appendChild(img);
   tr.appendChild(tdImg);
 
-  tr.appendChild(Object.assign(document.createElement("td"), { innerHTML: entity.name }));
+  tr.appendChild(
+    Object.assign(document.createElement("td"), { innerHTML: entity.name })
+  );
   tr.appendChild(Object.assign(document.createElement("td"), { innerHTML: x }));
   tr.appendChild(Object.assign(document.createElement("td"), { innerHTML: z }));
 
-  const { strength } = await (await fetch(`${API_URL}/entities/${entity.id}`)).json();
-  tr.appendChild(Object.assign(document.createElement("td"), { innerHTML: strength }));
+  const { strength } = await (
+    await fetch(`${API_URL}/entities/${entity.id}`)
+  ).json();
+  tr.appendChild(
+    Object.assign(document.createElement("td"), { innerHTML: strength })
+  );
 
   const tdButton = document.createElement("td");
   const button = document.createElement("button");
   button.innerHTML = "DELETE";
   button.className = "delete-btn";
   button.addEventListener("click", async () => {
-    const answ = await (await fetch(`${API_URL}/arena/entities/${id}`, { method: "DELETE" })).text();
+    const answ = await (
+      await fetch(`${API_URL}/arena/entities/${id}`, { method: "DELETE" })
+    ).text();
     console.log(answ);
     tr.remove();
   });
@@ -52,31 +60,50 @@ for (let entity of arenaEntities) {
   tbody.append(await createTableElement(entity));
 }
 
-
-spawnForm.addEventListener("submit", async e => {
+spawnForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = new FormData(spawnForm);
-  const data = Object.fromEntries(
-    Array.from(formData.entries()).map(([key, value]) => [key, parseFloat(value)])
-  );
 
-  const response = await fetch(`${API_URL}/arena/entities`, {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-type": "application/json"
+  const entityId = formData.get("entityId");
+
+  const data = {
+    entityId: entityId,
+    x: parseFloat(formData.get("x")),
+    z: parseFloat(formData.get("z")),
+  };
+
+  console.log("Sending data to API:", data);
+
+  try {
+    const response = await fetch(`${API_URL}/arena/entities`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    const responseData = await response.json();
+    console.log("API response:", responseData);
+
+    if (response.ok) {
+      const newEntityRes = await fetch(
+        `${API_URL}/arena/entities/${responseData.id}`
+      );
+      const newEntityData = await newEntityRes.json();
+      tbody.append(await createTableElement(newEntityData));
+
+      spawnForm.reset();
+    } else {
+      console.error("Failed to spawn entity:", responseData);
+      alert("Failed to spawn entity. See console for details.");
     }
-  });
-
-  const responseData = await response.json();
-  if (response.ok) {
-    const newEntityRes = await fetch(`${API_URL}/arena/entities/${responseData.id}`);
-    const newEntityData = await newEntityRes.json();
-    tbody.append(await createTableElement(newEntityData));
+  } catch (error) {
+    console.error("Error during spawn request:", error);
+    alert("Error during spawn request. See console for details.");
   }
 });
-
 
 const arenaStatusRes = await fetch(`${API_URL}/arena`);
 const arenaStatusData = await arenaStatusRes.json();

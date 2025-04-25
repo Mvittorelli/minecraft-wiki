@@ -12,7 +12,7 @@
   background: var(--clr-white);
   padding: 26px 30px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .breadcrumb,
@@ -55,7 +55,7 @@ h2 {
 
 .desc {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   justify-content: space-between;
   gap: 24px;
 }
@@ -66,7 +66,6 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-
 
 .card-title {
   display: flex;
@@ -82,8 +81,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .card-title p {
   color: var(--clr-white);
@@ -124,8 +121,6 @@ h2 {
   font-weight: 300;
   font-size: 16px;
 }
-
-
 
 .size {
   display: flex;
@@ -177,10 +172,90 @@ hr {
   border: none;
 }
 
-
 h2,
 #title-name {
   text-transform: capitalize;
+}
+
+hr {
+  color: #4f8c69;
+}
+
+.card-title {
+  box-shadow: -4px -4px 2px 0px #00000040 inset;
+}
+
+/* --- THEMES PAR TYPE DE MOB --- */
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.card .value,
+.card .label,
+.card .hw p {
+  color: inherit;
+}
+
+.card-title p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info {
+  background-color: #f5e2bc;
+  border-left: 5px solid #c2ac7f;
+  margin: 15px 0;
+}
+
+.value {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 400px;
+}
+
+.btn {
+  padding: 12px 0;
+  border: none;
+  color: var(--clr-white);
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: 4px 4px 6px var(--clr-shadow);
+  box-shadow: inset -4px -4px 2px var(--clr-shadow-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+img.mob-img {
+  width: 200px;
+}
+
+.desc > p {
+  width: 60%;
+}
+
+text-down {
+  display: flex;
+}
+
+@media screen and (max-width: 570px) {
+ .card{
+  width: 90%;
+ }
 }
 
 @media screen and (min-width: 768px) {
@@ -205,85 +280,4 @@ h2,
   .desc {
     flex-direction: row;
   }
-}
-
-
-hr {
-    color: #4F8C69;
-}
-
-.card-title {
-  box-shadow: -4px -4px 2px 0px #00000040 inset;
-}
-
-/* --- THEMES PAR TYPE DE MOB --- */
-
-
-
-.btn {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  border: none;
-}
-
-.btn:hover {
-  filter: brightness(1.1);
-  cursor: pointer;
-}
-
-
-.card .value,
-.card .label,
-.card .hw p {
-  color: inherit;
-}
-
-.card-title p {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.info {
-  background-color: #F5E2BC;
-  border-left: 5px solid #C2AC7F;
-  margin: 15px 0;
-}
-
-.value {
-  width: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.card {
-  width: 400px;
-
-}
-
-
-.btn {
-  padding: 12px 0;
-  border: none;
-  color: var(--clr-white);
-  font-weight: 700;
-  font-size: 16px;
-  text-shadow: 4px 4px 6px var(--clr-shadow);
-  box-shadow: inset -4px -4px 2px var(--clr-shadow-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  margin-bottom: 3px;}
-
-img.mob-img {
-  width: 200px;
-}
-
-
-.desc > p  {
-  width:60%;
-}
-
-text-down {
-  display: flex;
 }
