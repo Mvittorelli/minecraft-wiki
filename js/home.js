@@ -135,6 +135,7 @@ function renderEntities(entities) {
 
     const text = document.createElement("p");
     text.innerText = "No entity found.";
+    text.style.color = "#8C8C8C";
 
     emptyDiv.appendChild(image);
     emptyDiv.appendChild(text);
