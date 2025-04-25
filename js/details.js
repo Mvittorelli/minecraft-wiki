@@ -8,34 +8,37 @@ document.addEventListener("DOMContentLoaded", async () => {
     const res = await fetch(`${API_URL}/entities/${id}`);
     const mob = await res.json();
 
-    document.querySelector(".desc p").innerHTML = mob.description;
-    document.querySelector("h2").innerHTML = mob.name;
-    document.querySelector("#title-name").innerHTML = mob.name;
+    // Met à jour les infos de base
+    document.querySelector("h2").textContent = mob.name;
+    document.querySelector("#title-name").textContent = mob.name;
     document.querySelector("#title-icon").src = mob.icon;
     document.querySelector(".mob-img").src = mob.image;
+    document.querySelector("#health").textContent = mob.health;
+    document.querySelector("#armor").textContent = mob.armor;
+    document.querySelector("#damage").textContent = mob.strength;
+    document.querySelector("#classification").textContent = mob.classification;
+    document.querySelector("#behavior").textContent = mob.type;
+    document.querySelector("#width").textContent = mob.width;
+    document.querySelector("#height").textContent = mob.height;
 
-    document.querySelector("#health").innerHTML = mob.health;
-    document.querySelector("#armor").innerHTML = mob.armor;
-    document.querySelector("#damage").innerHTML = mob.strength;
-    document.querySelector("#classification").innerHTML = mob.classification;
-    document.querySelector("#category-classification").innerHTML = `${mob.classification}&nbsp;`;
-    document.querySelector("#behavior").innerHTML = mob.type;
-    document.querySelector("#width").innerHTML = mob.width;
-    document.querySelector("#height").innerHTML = mob.height;
+    // Met en gras le nom du mob dans la description
+    const regex = new RegExp(`\\b(${mob.name})\\b`, "gi");
+    const formattedDescription = mob.description.replace(
+      regex,
+      "<strong>$1</strong>"
+    );
+    document.querySelector(".desc p").innerHTML = formattedDescription;
 
-    document.querySelector(".card").classList.add(mob.type);
-    document.querySelector(".btn").classList.add(mob.type);
-    for (let hr of document.querySelectorAll("hr")) hr.classList.add(mob.type);
+    // Applique le type pour le style dynamique
+    const elementsToStyle = [
+      document.querySelector(".card"),
+      document.querySelector(".btn"),
+      document.querySelector(".card-title"),
+      ...document.querySelectorAll("hr"),
+    ];
+
+    elementsToStyle.forEach((el) => el.classList.add(mob.type));
   } catch (err) {
     console.error("Erreur lors du chargement du mob :", err);
   }
-
 });
-
-
-document.querySelector(".card").classList.add(mob.type);
-document.querySelector(".btn").classList.add(mob.type);
-document.querySelector(".card-title").classList.add(mob.type);
-for (let hr of document.querySelectorAll("hr")) {
-  hr.classList.add(mob.type);
-}

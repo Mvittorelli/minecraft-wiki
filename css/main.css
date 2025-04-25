@@ -252,33 +252,21 @@ hr {
   height: 20px;
 }
 
-.card.passive,
-.btn.passive,
-hr.passive {
-  background-color: var(--clr-passive);
-  color: var(--clr-white);
-  border: none;
+.card.passive  {
+  border : 2px solid var(--clr-passive);
 }
 
-.card.neutral,
-.btn.neutral,
-hr.neutral {
-  background-color: var(--clr-neutral);
-  color: var(--clr-black);
-  border: none;
+.card.neutral {
+  border : 2px solid var(--clr-neutral);
 }
 
-.card.hostile,
-.btn.hostile,
-hr.hostile {
-  background-color: var(--clr-hostile);
-  color: var(--clr-white);
-  border: none;
+.card.hostile {
+  border : 2px solid var(--clr-hostile);
 }
 
 
 .card-title.passive {
-  background-color: var(--clr-passive);
+background-color:   var(--clr-passive);
 }
 .card-title.neutral {
   background-color: var(--clr-neutral);
@@ -296,3 +284,6 @@ hr.hostile {
   font-size: 16px;
 
  }
+
+
+ 

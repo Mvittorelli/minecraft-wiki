@@ -207,9 +207,6 @@ h2,
   }
 }
 
-.card {
-    border: 3px solid #4F8C69;
-}
 
 hr {
     color: #4F8C69;
@@ -282,4 +279,9 @@ hr {
 
 img.mob-img {
   width: 200px;
+}
+
+
+.desc > p  {
+  width:60%;
 }
