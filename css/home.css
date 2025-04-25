@@ -115,6 +115,7 @@
   
   #result img {
     max-width: 120px;
+    max-height: 200px;
   }
     
   #result .info {
@@ -124,6 +125,10 @@
     flex-direction: row;
   }
   
+   
+  #result > div {
+    height: 400px;
+  } 
   
   #result .info p {
     width: max-content;
