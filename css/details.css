@@ -54,7 +54,8 @@ h2 {
 
 .desc {
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+  justify-content: space-between;
   gap: 24px;
 }
 
@@ -260,7 +261,7 @@ hr {
 }
 
 .card {
-  width: 40%;
+  width: 400px;
 
 }
 

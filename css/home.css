@@ -79,6 +79,9 @@
   .box.passive {
     background-color: #4F8C69;
   }
+  .box.Passive {
+    background-color: #4F8C69;
+  }
   
   .box.neutral {
     background-color: #E3B599;
@@ -161,6 +164,10 @@
     border: 2px solid #4F8C69;
   }
 
+   
+  #result > div.Passive {
+    border: 2px solid #4F8C69;
+  }
   
 #result > div > div {
   width: 90%;
